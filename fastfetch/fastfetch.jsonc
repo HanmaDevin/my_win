@@ -1,0 +1,44 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "padding": {
+            "top": 2
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "host",
+        "kernel",
+        "initsystem",
+        "uptime",
+        "shell",
+        {
+            "type": "cpu",
+            "showPeCoreCount": true,
+            "temp": true
+        },
+        "cpuusage",
+        {
+            "type": "gpu",
+            "driverSpecific": true,
+            "temp": true
+        },
+        "memory",
+        {
+            "type": "battery",
+            "temp": true
+        },
+        {
+            "type": "publicip",
+            "timeout": 1000
+        },
+       "datetime",
+        {
+          "type": "weather",
+          "timeout": 1000
+        },
+       "colors"
+    ]
+}
